@@ -15,8 +15,8 @@ public class PromptTemplateUtil {
                        fits this budget (not the province/city name itself, but a specific
                        area or tourist spot — for example, if the province is West Java
                        and the area is Bandung, a specific destination could be "Ciwidey"
-                       or "Lembang", not just "Bandung").
-                    2. Provide the total estimated cost for this trip.
+                       or "Lembang", not just "Bandung"). Provide formatted price with currency symbol Rp and thousand separators (e.g., Rp1,000,000)
+                    2. Provide the total estimated cost for this trip. Provide formatted price with currency symbol Rp and thousand separators (e.g., Rp1,000,000).
                     3. Provide a short description of why this destination fits the budget.
                     4. Provide practical travel tips.
                     5. Provide a list of 3-5 REAL and SPECIFIC activities/places at that
