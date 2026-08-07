@@ -3,6 +3,7 @@ package com.travelai.travelai.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,12 +30,12 @@ public class ChatController {
         return travelAgentService.chat(message, conversationId);
     }
 
-    @GetMapping("/travel")
+    @PostMapping("/travel")
     public TravelResponse travel(@RequestBody TravelRecomendationRequest request) {
         return travelAgentService.getRecommendation(request);
     }
 
-    @GetMapping("/travel/list")
+    @PostMapping("/travel/list")
     public List<TravelResponse> travelList(@RequestBody TravelRecomendationRequest request) {
         return travelAgentService.getRecommendationList(request);
     }
